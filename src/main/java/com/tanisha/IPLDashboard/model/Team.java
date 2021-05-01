@@ -50,12 +50,19 @@ public class Team {
         this.teamName = teamName;
         this.totalMatches = totalMatches;
     }
-
     @Override
     public String toString() {
         return "Team [teamName=" + teamName + ", totalMatches=" + totalMatches + ", totalWins=" + totalWins + "]";
     }
+    public Team() {
 
+    }
+    public List<Match> getMatches() {
+        return matches;
+    }
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
+    }
 
 
 
